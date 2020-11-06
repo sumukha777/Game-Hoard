@@ -1,0 +1,27 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+  
+    /*font-size: 18px;*/
+    line-height: 1.65; /*1.65 times pre-defined line height */
+    color: #cff1ef;
+    background-color: $color-black-light;
+    padding: 3.2rem;
+    box-sizing: border-box;
+  }
+
+

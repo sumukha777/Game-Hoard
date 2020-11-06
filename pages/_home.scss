@@ -1,0 +1,52 @@
+.section-about {
+    background-color: $color-black-light;
+    padding: 25rem 0;
+    margin-top: -24vh; //since the upper shape was 71vh on right side and entire shape was 95vh (95-71=24 (-ve because margin should go up))
+
+}
+
+.section-feature {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, #cceabbb6, #99ac8fc5),
+    url(../img/pc6.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.section-build {
+    background-color: $color-black-light;
+    padding: 25rem 0 10rem 0;
+    margin-top: -10rem;
+}
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+}
+
+.section-book {
+    padding: 15rem 0;
+    margin-top: 10rem;
+    border-radius: 3px;
+    background-image: linear-gradient(to right bottom, $color-red-text-light, $color-red-text-dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .9) 0%, rgba($color-white, .9) 50%,
+                                    transparent 50%), 
+                                    url(../../img/gaming-room2.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

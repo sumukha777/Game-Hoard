@@ -1,0 +1,33 @@
+
+//for grid learning
+.row {
+    max-width: $grid-width; //changes according to screen size
+    //background-color: #eee;
+    margin: 0 auto;
+    //color: #000;
+
+    &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    }
+    @include clearfix;
+
+    [class^= "col-"] {                                   //to select multiple classes(since col- is common for all the starting columns)
+        //background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+    .col-1-of-2 {
+        
+        width: calc((100% - #{$gutter-horizontal})/2);
+        
+    } 
+
+    .col-1-of-3 {
+        width: calc((100% - 2*#{$gutter-horizontal})/3);
+       }
+
+}

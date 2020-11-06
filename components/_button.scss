@@ -1,0 +1,100 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 25rem;
+    transition: all 0.2s;
+    position: relative; /* relative to btn::after*/
+    font-size: $text-font-size;
+
+    //change for <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(
+      -0.3rem
+    ); /*when hovered to the button, it goes up by 3px in Y direction*/
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  &--white {
+    background-color: $btn-bckgnd-color;
+    color: #f0f0f0;
+
+    &::after {
+      background-color: $btn-bckgnd-color;
+    }
+  }
+
+  &--blue {
+    background-color: $btn-bckgnd-color;
+    color: #f0f0f0;
+  }
+
+  &::after {
+    background-color: $btn-bckgnd-color;
+  }
+
+  &::after {
+    /* after the button is pressed*/
+    content: "";
+    display: inline-block;
+    height: 100%; /*animation prpty of btn will be same as the btn height and width*/
+    width: 100%; /*this is child of the btn*/
+    border-radius: 25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* this is behind the button*/
+    transition: all 0.4s;
+  }
+
+  &:hover::after {
+    /*when btn is hovered in after pseudo class*/
+    transform: scaleX(1.4) scaleY(1.6); /*scales 1.4 times the size of button in x-direction, so in case of y*/
+    opacity: 0; /* should fade away in the end*/
+  }
+
+  &--animated {
+    /*to move the button from bottom to it's original position*/
+    animation: moveInBottom 0.5s ease-out 0.75s; /*0.75s is time to start animation after the heading animation starts*/
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $text-font-size;
+    color: $color-red-text-dark;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-red-text-dark;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-red-text-dark;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}

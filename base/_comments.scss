@@ -1,0 +1,98 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+red: #dc3545
+teal: #20c997
+neon blue: #17a2b8
+background: dark: #343a40
+orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745
+secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+*/
+
+// <!-- <section class="grid-test">
+//       <div class="row">
+//         <div class="col-1-of-2">
+//           col 1 of 2
+//         </div>
+//         <div class="col-1-of-2">
+//           col 1 of 2
+//         </div>
+//       </div>
+
+//       <div class="row">
+//         <div class="col-1-of-3">
+//           col 1 of 3
+//         </div>
+//         <div class="col-1-of-3">
+//           col 1 of 3
+//         </div>
+//         <div class="col-1-of-3">
+//           col 1 of 3
+//         </div>
+//       </div>
+
+//       <div class="row">
+//         <div class="col-1-of-3">
+//           col 1 of 3
+//         </div>
+//         <div class="col-2-of-3">
+//           col 2 of 3
+//         </div>
+//       </div>
+
+//       <div class="row">
+//         <div class="col-1-of-4">
+//           col 1 of 4
+//         </div>
+//         <div class="col-1-of-4">
+//           col 1 of 4
+//         </div>
+//         <div class="col-2-of-4">
+//           col 2 of 4
+//         </div>
+//       </div>
+
+//       <div class="row">  
+//         <div class="col-1-of-4">
+//           col 1 of 4
+//         </div>
+//         <div class="col-3-of-4">
+//           col 3 of 4
+//         </div>
+//       </div>
+//     </section> -->
+
+//grid css
+// .col-1-of-3 {
+//     width: calc((100% - 2*#{$gutter-horizontal})/3);
+// }
+
+// .col-1-of-4 {
+//     width: calc((100% - 3 * #{$gutter-horizontal})/ 4);
+// }
+
+// .col-2-of-3 {
+//     width: calc(2 *((100% - 2 * #{$gutter-horizontal})/ 3) + #{$gutter-horizontal});
+    
+// }
+
+// .col-2-of-4 {
+//     width: calc(2 * ((100% - 3 * #{$gutter-horizontal})/ 4) + #{$gutter-horizontal});
+// }
+
+// .col-3-of-4 {
+//     width: calc((100% - 3 * #{$gutter-horizontal})/ 4 + 2 * ((100% - 3 * #{$gutter-horizontal})/ 4) + #{$gutter-horizontal} );
+// }
